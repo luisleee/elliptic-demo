@@ -1,0 +1,11 @@
+[package]
+name = "elliptic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+criterion = "0.7"
+
+[[bench]]
+name = "bigint"
+harness = false
