@@ -4,8 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-criterion = "0.7"
+criterion = {version = "0.7", features = ["html_reports"]}
 
 [[bench]]
-name = "bigint"
+name = "field"
+harness = false
+
+[[bench]]
+name = "point"
 harness = false
